@@ -1,0 +1,80 @@
+.header {
+    background-color: #131921;
+    display: flex;
+    align-items: center;
+    /* to make sure header always appears when you
+    scroll  */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+}
+
+.header__logo {
+    width: 100px;
+    object-fit: contain;
+    /* What objectfit conatin does is no matter the screen size it always 
+    keeps up the aspect ratio */
+    margin: 18px 20px 0px;
+}
+.searchBox {
+    display: flex;
+    flex: 1;
+    /* searchBox is given value of flex:1 to make it spread out 
+    What flex 1 say is to try and take as much room as you can*/
+}
+
+
+.header__searchInput {
+    height: 12px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+}
+.header__searchIcon {
+    background-color: #cd9042;
+    padding: 6px;
+    height: 20px !important;
+    
+}
+
+
+.header__nav {
+   display: flex; 
+   justify-content: space-evenly;
+
+}
+.header__link {
+    margin: 0 5px;
+    color: white;
+    text-decoration: none;
+
+}
+.header__option {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    cursor:pointer;
+
+}
+
+
+.h__option1 {
+    font-size: 10px;
+}
+
+.h__option2 {
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.header__optionBasket {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.header__optionBasketCount {
+    margin-left: 3px;
+}
